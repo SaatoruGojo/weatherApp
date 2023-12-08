@@ -12,6 +12,12 @@ The live version of this project can be accessed [here](https://weatherapp-n8je.
 
 - **Get Weather Information:** Enter the name of a city, units, and your OpenWeatherMap API key to retrieve current weather details.
 
+## Tech Stack
+
+- **Backend:** Flask (Python)
+- **Frontend:** HTML, CSS
+- **API:** OpenWeatherMap API
+- **Deployment:** RENDER
 
 ##### Set up your OpenWeatherMap API key:
 Go to https://openweathermap.org/ and sign up for a free account.
