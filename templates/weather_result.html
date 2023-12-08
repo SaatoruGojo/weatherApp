@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-image: url('https://images.unsplash.com/photo-1499346030926-9a72daac6c63?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #333; /* Dark text color */
+        }
+
+        h1 {
+            color: #ffffff; /* White text for headings */
+        }
+
+        table {
+            width: 50%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            border-radius: 10px;
+        }
+
+        th, td {
+            padding: 15px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #3498db; /* Cloud theme blue for header */
+            color: #ffffff; /* White text for header */
+            width: 30%; /* Wider column for keys */
+        }
+
+        td {
+            width: 70%; /* Wider column for values */
+            max-width: 70%; /* Set a maximum width to prevent stretching */
+            word-wrap: break-word; /* Allow long words to break and wrap */
+        }
+    </style>
+</head>
+<body>
+    <h1>Weather Result</h1>
+    
+    <table>
+        <tr>
+            <th>City</th>
+            <td>{{ data['name'] }}</td>
+        </tr>
+        <tr>
+            <th>Temperature</th>
+            <td>{{ data['main']['temp'] }}</td>
+        </tr>
+        <tr>
+            <th>Weather Description</th>
+            <td>{{ data['weather'][0]['description'] }}</td>
+        </tr>
+        <tr>
+            <th>Humidity</th>
+            <td>{{ data['main']['humidity'] }}</td>
+        </tr>
+        <tr>
+            <th>Wind Speed</th>
+            <td>{{ data['wind']['speed'] }}</td>
+        </tr>
+    </table>
+</body>
+</html>
