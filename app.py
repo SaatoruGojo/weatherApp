@@ -11,10 +11,11 @@ def homepage():
 @app.route('/get_weather',methods=['GET', 'POST'])
 def getWeather():
     url = "https://api.openweathermap.org/data/2.5/weather"
+    x = "metric"
     param = {
         'q' : request.form.get("city"),
         'appid' : request.form.get("appid"),
-        'units' : request.form.get("unit")
+        'units' : x
     }
     response = requests.get(url,params=param)
     data = response.json()
