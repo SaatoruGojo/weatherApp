@@ -1,6 +1,6 @@
 # Weather App
 
-![Weather App]([https://your-image-url.com](https://i.imgur.com/BHuno41.png)) <!-- Replace with a screenshot or logo of your app -->
+![Weather App](https://i.imgur.com/BHuno41.png) <!-- Replace with a screenshot or logo of your app -->
 
 ## Overview
 
